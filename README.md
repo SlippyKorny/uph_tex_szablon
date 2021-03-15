@@ -18,7 +18,15 @@ nazewnicza nie jest konieczna ale łatwiej potem się połapać, który rozdzia�
 
 Nazwy rozdziału oraz nazwa pliku oczywiście musi być adekwatna do wcześniej utworzonych plików rozdziałów.
 
-Et voilà ! Wystarczy skompilować projekt i masz rozkład swojej pracy dyplomowej. Plików wstępu oraz podsumowania nie musisz tworzyć - jest już on utworzony w `Chapters/1_wstep.tex` oraz `Chapters/podsumowanie.tex`. Wystarczy go zapełnić. Bibliografię wrzucaj do `References.bib`. Jeżeli chcesz wiedzieć jak szybko załączać grafikę, wzory, dodawać tablice oraz skrawki kodu to zerknij to pliku `2_rozdzial_pomoc.tex` w folderze chapters. 
+Et voilà ! Wystarczy skompilować projekt i masz rozkład swojej pracy dyplomowej.
+
+# Drobne uwagi
+
+Pliki wstępu oraz podsumowania nie muszą być tworzone. Stworzyłem je już w i są dostępne pod adresami `Chapters/1_wstep.tex` oraz `Chapters/podsumowanie.tex`. Wystarczy je jedynie zapełnić. Sytuacja ma się podobnie z bibliografią. Wrzucaj ją do `References.bib`. 
+
+Żeby powiązać referencje z referencjami z pliku referencji, należy użyć opcji podwójnej kompilacji przy pomocy pdflatex oraz przeplecić ją użyciem biblatex *(w edytorze texmaker można to uzyskać wchodząc przez pasek menu u góry do Options > Quick Build > "PdfLaTeX + Bib(la)tex + PdfLaTeX (x2) + View Pdf")*.
+
+Jeżeli jesteś nowy i nie do końca ogarniasz LaTeX'a i chcesz wiedzieć jak szybko załączać grafikę, wzory, dodawać tablice oraz skrawki kodu to zerknij to pliku `2_rozdzial_pomoc.tex` w folderze chapters. Tam napisałem bardzo krótką instrukcję. 
 
 # Problemy
 
