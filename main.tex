@@ -1,0 +1,84 @@
+\documentclass[12pt,polish,a4paper, left=254mm, right=254mm, top=150mm, bottom=150mm]{report}
+% Importy paczek
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{pgfplots}
+\usepackage{polski}
+\usepackage[polish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{pgfplots}
+\usepackage{pdfpages}
+\usepackage{fancyvrb}
+\usepackage{mathptmx}
+
+% Makro do rozmiaru customowego czcionki
+\newenvironment{localsize}[1]
+{%
+  \clearpage
+  \let\orignewcommand\newcommand
+  \let\newcommand\renewcommand
+  \makeatletter
+  \input{bk#1.clo}%
+  \makeatother
+  \let\newcommand\orignewcommand
+}
+{%
+  \clearpage
+}
+
+% Import bitex i dodanie źródła z bibliografią
+\usepackage[backend=bibtex,style=numeric,sorting=none]{biblatex}
+\addbibresource{References.bib}
+
+% Ścieżka do grafiki
+\graphicspath{{images/}}
+
+% Importy paczek upiększających
+\usepackage{float}
+
+% Makro dla opis+źródło
+\begin{document}
+\newcommand*{\captionsource}[2]{%
+  \caption[{#1}]{%
+    #1 %
+    % \hspace{\linewidth}%
+    (Źródło: #2)%
+  }%
+}
+
+% Strona tytułowa
+\includepdf[pages=-]{oswiadczenie_i_tytulowa.pdf}
+
+% Tytuł pracy i słowa kluczowe PL/EN
+\input{Chapters/0_slowa_kluczowe.tex}
+
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+\chapter*{Wstęp}
+\addcontentsline{toc}{chapter}{Wstęp}
+\input{Chapters/1_wstep.tex}
+
+% <<< ======================================================================================== <<<
+% Tutaj wklejaj swoje rozdziały
+
+\chapter{Rozdział pomocniczy do utworzenia pracy dyplomowej}
+\input{Chapters/2_rozdzial_pomoc.tex}
+
+\chapter*{Podsumowanie oraz wnioski}
+\addcontentsline{toc}{chapter}{Podsumowanie oraz wnioski}
+\input{Chapters/podsumowanie.tex}
+
+\addcontentsline{toc}{chapter}{Bibliografia}
+\printbibliography
+
+\addcontentsline{toc}{chapter}{Spis Rysunków}
+\listoffigures
+
+\addcontentsline{toc}{chapter}{Spis tabel}
+\listoftables
+
+\end{document}
+
