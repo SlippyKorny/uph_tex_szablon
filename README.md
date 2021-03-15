@@ -1,10 +1,10 @@
 # Szablon pracy dyplomowej na UPH
 
-Te repozytorium zawiera szablon latex pracy dyplomowej zgodnej z zasadami Uniwersytetu Przyrodniczo-Humanistycznego.
+Te repozytorium zawiera szablon latex pracy dyplomowej zgodnej z zasadami Uniwersytetu Przyrodniczo-Humanistycznego. Był on przeze mnie wykorzystywany na tex live na pop_os! Linux 20.10.
 
 # Quickstart
 
-1. Otwórz plik *oswiadczenie_i_tytulowa.odt* i podmień temat pracy, imię *"Jan Kowalski"* na swoje oraz imię *"Mateusz Nowak"* na imię twojego promotora.
+1. Otwórz plik `oswiadczenie_i_tytulowa.odt` i podmień temat pracy, imię *"Jan Kowalski"* na swoje oraz imię *"Mateusz Nowak"* na imię twojego promotora.
 2. Wyeksportuj ten plik do pdf o nazwie `oswiadczenie_i_tytulowa.pdf`.
 3. Przejdź do folderu chapters i podmień słowa kluczowe oraz tytuł pracy w pliku `0_slowa_kluczowe.tex`
 4. Następnie utwórz dla każdego rozdziału w tym folderze plik .tex o takim formacie `3_nazwa_rozdzialu.tex` gdzie 2 będzie numerem rozdziału a `nazwa_rozdzialu` nazwą rozdziału. Ta konwencja
@@ -24,3 +24,4 @@ Et voilà ! Wystarczy skompilować projekt i masz rozkład swojej pracy dyplomow
 
 Jeżeli napotkasz jakieś problemy z tym szablonem to załóż proszę issue na tym repozytorium bądź jak masz chęci naprawy go to utwórz pull requesta z fixem a przejrzę go w wolnym czasie.
  
+
